@@ -1,0 +1,238 @@
+:root{
+    --white:#ffff;
+    --black:#1B1A1A;
+    --primary:#22333b;
+    --secundary:#eae0d5;
+    --terc:#c6ac8f;
+    --final:#5e503f;
+
+
+}
+html{
+    font-size: 70%;
+    box-sizing: border-box;
+}
+/*Ayuda con el modelo de caja*/
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+.nav-bg{
+    background-color: var(--black);
+}
+
+.disable{
+    pointer-events: none;
+}
+
+.imgs {
+    width: 100px;
+    height: 60px;
+    display: block;
+    margin-left: 300px;
+    
+}
+@media (min-width:768px) {
+    .imgs {
+        width: 100px;
+        height: 40px;
+       margin-left: -100px;
+       padding-right:20px ;
+       
+       
+    }
+}
+
+.nav-principal{
+  
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+}
+@media (min-width:768px) {
+    .nav-principal{
+        flex-direction: row;
+    }
+}
+.nav-principal a {
+   display: block;
+   text-align: center;
+   justify-content: center;
+   color:var(--white);
+   text-decoration: none;
+   font-size:medium;
+   font-weight:700;
+   padding:1rem;
+}
+.nav-principal a:hover{
+    
+    background-color: var(--terc);
+    color: var(--primary);
+    
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto  ;   
+    
+}
+
+.cont-header{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.text{
+    color: var(--black);
+    text-align: center;
+    background-color: rgba(236, 220, 220, 0.5);
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    border-radius: 10px;
+    
+}
+
+.texttitle{
+    font-family:'Courier New', Courier, monospace;
+    font-size: xx-large;
+}
+.textsubt{
+    font-family:'Courier New', Courier, monospace;
+    font-size:larger;
+}
+
+
+.subt{
+    display: flex;
+    justify-content: center;
+}
+.primer{
+    padding-top: 10px;
+    background-image: url(/img/cakess12.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    position: relative;
+    height: 50rem;
+   
+    
+
+}
+
+
+.cont-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 50px;
+  }
+
+
+.btn{
+    position: relative;
+    display: block;
+    color: var(--black);
+    font-size: 14px;
+    font-family: "montserrat";
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid var(--final);
+    padding: 14px 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+  }
+  .btn::before{
+    background: var(--terc);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+  }
+
+  .btn-f::before{
+    width: 100%;
+    height: 0%;
+  }
+  .btn-f:hover::before{
+    height: 100%;
+  }
+
+  .sugst{
+      padding-top: 10rem;
+  }
+
+
+
+  
+
+  div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .sug{
+    display: flex;
+    flex-direction: row;
+     justify-content:space-evenly;
+  }
+
+.sug img{
+    
+    height: 100%;
+    width: 20%;
+
+}
+
+.lett{
+    font-family: 'Courier New', Courier, monospace;
+    font-style:italic;
+}
