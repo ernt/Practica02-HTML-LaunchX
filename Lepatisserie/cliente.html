@@ -9,7 +9,72 @@
     <link rel="stylesheet" type="text/css" href="css/syle.css" media="screen" />
  
 </head>
-<body>
+<div class="nav-bg">
     
-</body>
+    <nav class="nav-principal contenedor">
+       <a href="#" class="disable"> <img class="imgs"  src="/img/Desktop - 12.png" alt=""></a>
+        <a href="/home.html">Inicio</a>
+        <a href="/Menu.html">Menú</a>
+        <a href="/pastelero.html">Pastelero</a>
+        <a href="/home.html#nosotros">Contactanos</a>
+    </nav>
+</div>
+
+
+<header>
+
+    
+    
+</header>
+
+    <body>
+
+        <h3 class="texttitle subt">Pedido</h3>
+        
+        <div class="form-div">
+          <form action="/action_page.php">
+            <label for="fname">Nombre</label>
+            <input type="text" id="fname" name="firstname" placeholder="Nombre..">
+        
+            <label for="lname">Apellidos</label>
+            <input type="text" id="lname" name="lastname" placeholder="Apellidos..">
+        
+            <label for="Adorno">Primer Adorno</label>
+            <select id="Adorno" name="Adorno">
+              <option value="Conejitos">Conejitos</option>
+              <option value="Galletas">Galletas</option>
+              <option value="Gomitas">Gomitas</option>
+              <option value="None">Ninguno</option>
+            </select>
+            <label for="Adorno2">Segundo Adorno</label>
+            <select id="Adorno2" name="Adorno2">
+              <option value="Conejitos">Conejitos</option>
+              <option value="Galletas">Galletas</option>
+              <option value="Gomitas">Gomitas</option>
+              <option value="None">Ninguno</option>
+            </select>
+
+            <label for="Sabor">Primer Sabor</label>
+            <select id="Sabor" name="Sabor">
+              <option value="Vainilla">Vainilla</option>
+              <option value="Ganashe">Ganashe</option>
+              <option value="Fresa">Fresa</option>
+              <option value="None">Ninguno</option>
+            </select>
+            <label for="Sabor2">Segundo Sabor</label>
+            <select id="Sabor2" name="Sabor2">
+              <option value="Vainilla">Vainilla</option>
+              <option value="Ganashe">Ganashe</option>
+              <option value="Fresa">Fresa</option>
+              <option value="None">Ninguno</option>
+            </select>
+
+            
+            <textarea id="subject" name="subject" placeholder="Descripcion del pastel.." style="height:100px"></textarea>
+          
+            <input  type="submit" value="Submit">
+          </form>
+        </div>
+        
+        </body>
 </html>
