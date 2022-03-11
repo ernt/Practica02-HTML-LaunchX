@@ -111,7 +111,7 @@ html{
 }
 .primer{
     padding-top: 10px;
-    background-image: url(img/cakess12.jpg) ;
+    background-image: url("img/cakess12.jpg") ;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
